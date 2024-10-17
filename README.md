@@ -10,6 +10,8 @@ Este proyecto es el backend de la aplicación Estramipime, diseñada para la ges
 
 * Edwin Cuteño: edwincuteno12@gmail.com
 
+* Reinaldo Rojas Lopez: rojas.reinaldo@hotmail.com
+
 ## Contribuciones
 
 ¡Agradecemos tus contribuciones! Por favor, revisa el archivo [`CONTRIBUTING.md`](./CONTRIBUTING.md) para obtener más detalles sobre cómo puedes colaborar.
