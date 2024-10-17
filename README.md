@@ -12,6 +12,8 @@ Este proyecto es el backend de la aplicación Estramipime, diseñada para la ges
 
 * Reinaldo Rojas Lopez: rojas.reinaldo@hotmail.com
 
+* Melissa Garcìa Turizo: melissagiseelle@gmail.com
+
 ## Contribuciones
 
 ¡Agradecemos tus contribuciones! Por favor, revisa el archivo [`CONTRIBUTING.md`](./CONTRIBUTING.md) para obtener más detalles sobre cómo puedes colaborar.
