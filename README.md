@@ -14,8 +14,7 @@ Este proyecto es el backend de la aplicación Estramipime, diseñada para la ges
 
 * Melissa Garcìa Turizo: melissagiseelle@gmail.com
 
-* Yuliana Andrea Echavarria Arboleda
-* yuliandre16.07@hotmail.com
+* Yuliana Andrea Echavarria Arboleda: yuliandre16.07@hotmail.com
 
 ## Contribuciones
 
