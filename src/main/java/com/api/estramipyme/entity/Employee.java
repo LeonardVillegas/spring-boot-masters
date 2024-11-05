@@ -3,7 +3,7 @@ package com.api.estramipyme.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "estramipymeDb")
 public class Employee {
 
     @Id
