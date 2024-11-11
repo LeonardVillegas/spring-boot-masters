@@ -51,5 +51,29 @@ public class ClientController {
 
 
     //Actualizar un cliente
+    //Actualizar un cliente
+    @PutMapping("/{id}")
+    public ResponseEntity<Client> updateClient(@PathVariable Long id, @RequestBody Client clientDetails) {
+        Optional<Client> existingClient = clientService.getClientById(id);
+
+        if (existingClient.isPresent()) {
+            Client clientToUpdate = existingClient.get();
+            clientToUpdate.setName(clientDetails.getName());
+            clientToUpdate.setSurname(clientDetails.getSurname());
+            clientToUpdate.setEmail(clientDetails.getEmail());
+            clientToUpdate.setPassword(clientDetails.getPassword());
+            clientToUpdate.setSector(clientDetails.getSector());
+            clientToUpdate.setBusinessName(clientDetails.getBusinessName());
+            clientToUpdate.setDocNumber(clientDetails.getDocNumber());
+            clientToUpdate.setDocType(clientDetails.getDocType());
+            clientToUpdate.setPersonType(clientDetails.getPersonType());
+
+            Client updatedClient = clientService.saveClient(clientToUpdate);
+            return ResponseEntity.ok(updatedClient);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 
 }
