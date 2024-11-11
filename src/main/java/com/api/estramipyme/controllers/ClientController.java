@@ -25,6 +25,7 @@ public class ClientController {
         return clientService.getAllClients();
     }
 
+    //Traer solo un cliente por el id
     @GetMapping("/{id}")
     public ResponseEntity<Client> getClientById(@PathVariable Long id) {
         Optional<Client> client = clientService.getClientById(id);
@@ -32,10 +33,23 @@ public class ClientController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    //crear un cliente
     @PostMapping
     public ResponseEntity<Client> createClient(@RequestBody Client client) {
         Client savedClient = clientService.saveClient(client);
         return new ResponseEntity<>(savedClient, HttpStatus.CREATED);
     }
+
+    //borrar un cliente
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Client> deleteClient(@PathVariable Long id) {
+        clientService.deleteClientById(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
+    }
+
+
+    //Actualizar un cliente
 
 }
