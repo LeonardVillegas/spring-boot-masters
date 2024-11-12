@@ -1,4 +1,7 @@
 package com.api.estramipyme.respositories;
 
-public interface ResponseRepository {
+import com.api.estramipyme.models.Response;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ResponseRepository extends JpaRepository<Response, Long> {
 }
