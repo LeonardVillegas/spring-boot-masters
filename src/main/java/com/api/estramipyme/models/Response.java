@@ -21,9 +21,6 @@ public class Response {
     @JoinColumn(name = "option_id", nullable = false)
     private Option option;
 
-    @Column(nullable = false)
-    private String ResponseText;
-
 
     public long getId() {
         return id;
@@ -55,13 +52,5 @@ public class Response {
 
     public void setOption(Option option) {
         this.option = option;
-    }
-
-    public String getResponseText() {
-        return ResponseText;
-    }
-
-    public void setResponseText(String responseText) {
-        ResponseText = responseText;
     }
 }
