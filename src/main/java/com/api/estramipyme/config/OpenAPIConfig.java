@@ -1,0 +1,16 @@
+package com.api.estramipyme.config;
+
+import org.springdoc.core.models.GroupedOpenApi;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class OpenAPIConfig {
+    @Bean
+    public GroupedOpenApi publicApi() {
+        return GroupedOpenApi.builder()
+                .group("public") // Nombre del grupo de API
+                .pathsToMatch("/api/**") // Rutas específicas a documentar
+                .build();
+    }
+}
