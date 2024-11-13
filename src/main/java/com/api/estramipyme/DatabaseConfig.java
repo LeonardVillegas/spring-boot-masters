@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Configuration;
 public class DatabaseConfig {
   @Bean
   public ApplicationRunner holaMundoRunner() {
-    return args -> System.out.println("Hola Mundo");
+    return args -> System.out.println("Cargar la base de datos");
   }
 }
