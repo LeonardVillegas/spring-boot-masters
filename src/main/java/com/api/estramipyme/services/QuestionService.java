@@ -33,4 +33,8 @@ public class QuestionService {
     public void deleteQuestionById(Long id) {
         questionRepository.deleteById(id);
     }
+
+    public boolean hasQuestion() {
+        return questionRepository.count()>0;
+    }
 }
