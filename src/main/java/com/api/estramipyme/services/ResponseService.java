@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-
 @Service
 public class ResponseService {
 
@@ -16,24 +15,31 @@ public class ResponseService {
 
     @Autowired
     public ResponseService(ResponseRepository responseRepository) {
+
         this.responseRepository = responseRepository;
     }
 
-    public Optional<Response> getQuestionById(Long id) {
-        return responseRepository.findById(id);
-    }
+    // Obtener todas las respuestas
+    public List<Response> getAllResponse() {
 
-    public List<Response> getAllQuestion() {
         return responseRepository.findAll();
     }
 
-    public Response createResponse(Response response) {
+    // Obtener una respuesta por su ID
+    public Optional<Response> getResponseById(Long id) {
+
+        return responseRepository.findById(id);
+    }
+
+    //Crear una nueva respuesta
+    public Response saveResponse(Response response) {
         return responseRepository.save(response);
     }
 
-    public void deleteQuestionById(Long id) {
-        responseRepository.deleteById(id);
+    // Eliminar una respuesta por su ID
+    public void deleteResponseById(Long id) {
+
+       responseRepository.deleteById(id);
     }
+
 }
-
-
