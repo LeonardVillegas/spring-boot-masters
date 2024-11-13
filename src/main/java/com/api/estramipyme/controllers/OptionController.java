@@ -1,11 +1,15 @@
 package com.api.estramipyme.controllers;
 
+import com.api.estramipyme.DTOs.OptionDTO;
 import com.api.estramipyme.models.Option;
+import com.api.estramipyme.models.Question;
 import com.api.estramipyme.services.OptionService;
+import com.api.estramipyme.services.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +19,13 @@ import java.util.Optional;
 public class OptionController {
 
     private final OptionService optionService;
+    private final QuestionService questionService ;
 
     @Autowired
-    public OptionController(OptionService optionService) {
+    public OptionController(OptionService optionService, QuestionService questionService) {
+
         this.optionService = optionService;
+        this.questionService = questionService;
     }
 
     // Trae todas las opciones
@@ -43,7 +50,12 @@ public class OptionController {
 
     // Crea una nueva opción
     @PostMapping
-    public ResponseEntity<Option> createOption(@RequestBody Option option) {
+    public ResponseEntity<Option> createOption(@RequestBody OptionDTO optionRequest) {
+        Question question = questionService.getQuestionById(optionRequest.questionId()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        Option option = new Option();
+        option.setQuestion(question);
+        option.setOptionText(optionRequest.optionText());
+        option.setOptionValue(optionRequest.optionValue());
         Option savedOption = optionService.saveOption(option);
         return new ResponseEntity<>(savedOption, HttpStatus.CREATED);
     }
