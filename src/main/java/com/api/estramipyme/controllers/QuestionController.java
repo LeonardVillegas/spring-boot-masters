@@ -1,5 +1,6 @@
 package com.api.estramipyme.controllers;
 
+import com.api.estramipyme.DTOs.DatabaseLoadDTO;
 import com.api.estramipyme.models.Option;
 import com.api.estramipyme.models.Question;
 import com.api.estramipyme.services.QuestionService;
@@ -65,6 +66,12 @@ public class QuestionController {
         } else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @GetMapping("with-options")
+    public ResponseEntity<List<DatabaseLoadDTO>> getQuestionsWithOptions() {
+        List<DatabaseLoadDTO> questions = questionService.getQuestionsWithOptions();
+        return ResponseEntity.ok(questions);
     }
 }
 
