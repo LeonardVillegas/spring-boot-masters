@@ -149,7 +149,7 @@ En este proyecto se utilizaron las siguientes tecnologías, lenguajes y herramie
 
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot) - Guía completa sobre el uso y configuración de Spring Boot
 - [PostgreSQL Documentation ](https://www.postgresql.org/docs/) - Guía completa para la instalación, configuración y administración de bases de datos PostgreSQL.
-- [Maven Documentation]([https://echarts.apache.org/en/index.html](https://maven.apache.org/guides/index.html) - Referencia para la construcción y gestión de dependencias del proyecto con Maven.
+- [Maven Documentation](https://maven.apache.org/guides/index.html) - Referencia para la construcción y gestión de dependencias del proyecto con Maven.
 
 ## **Contribuciones**
 
