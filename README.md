@@ -67,6 +67,16 @@ El backend de Estramipyme está desarrollado utilizando **Java** con el framewor
   <a href="https://view.genially.com/67410e1ff6a09a7b8a164fe2/presentation-manual-de-usuario-estramipyme"><strong>Estramipyme User Manual (English)</strong></a>
 </p>
 
+<p style="text-align: center;">
+  <a href="https://github.com/LeonardVillegas/spring-boot-masters/blob/main/Listado%20de%20las%20Capacidades%20Finales%20de%20la%20Plataforma%20Web%20de%20Estramipyme.pdf
+"><strong> Listado de las Capacidades Finales de la Plataforma Web de Estramipyme (Español) </strong></a>
+</p>
+
+<p style="text-align: center;">
+  <a href="https://github.com/LeonardVillegas/spring-boot-masters/blob/main/List%20of%20Final%20Capabilities%20of%20the%20Estramipyme%20Web%20Platform.pdf
+"><strong> List of Final Capabilities of the Estramipyme Web Platform (English) </strong></a>
+</p> 
+
 ## **Tecnologías Utilizadas en el Backend**
 
 En este proyecto se utilizaron las siguientes tecnologías, lenguajes y herramientas:
