@@ -147,9 +147,16 @@ En este proyecto se utilizaron las siguientes tecnologías, lenguajes y herramie
 
 ## **Referencias**
 
-- **Libro Estramipyme de Luz María Rivas-Montoya** - Guía completa para la aplicación de la metodología Estramipyme.
-- [Círculo Dorado de Simon Sinek](https://www.startwithwhy.com) - Referencia utilizada para la implementación del gráfico del Círculo Dorado en el proyecto.
-- [Angular Documentation](https://angular.io/docs) - Recurso principal para la migración y desarrollo del proyecto en Angular.
-- [ECharts Documentation](https://echarts.apache.org/en/index.html) - Referencia utilizada para la creación y personalización de gráficos en la página.
-- [Chart.js Documentation](https://www.chartjs.org/docs/latest/) - Fuente de consulta para la integración de gráficos interactivos en el proyecto.
-- **Manual de Marca Eafit** - Consultado para el uso de fuentes y colores en el diseño de la página.
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot) - Guía completa sobre el uso y configuración de Spring Boot
+- [PostgreSQL Documentation ](https://www.postgresql.org/docs/) - Guía completa para la instalación, configuración y administración de bases de datos PostgreSQL.
+- [Maven Documentation]([https://echarts.apache.org/en/index.html](https://maven.apache.org/guides/index.html) - Referencia para la construcción y gestión de dependencias del proyecto con Maven.
+
+## **Contribuciones**
+
+Si deseas contribuir:
+
+1. Haz un fork del proyecto.
+2. Crea una nueva rama para tus cambios.
+3. Envía un pull request con tus modificaciones.
+
+
